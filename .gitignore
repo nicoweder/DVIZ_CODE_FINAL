@@ -1,4 +1,15 @@
+# Python virtual environment
 .venv/
+
+# Python cache
 __pycache__/
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Quarto internal files
+_quarto/
+_cache/
+
+# HTML outputs (optional, only track if you want to share the rendered files)
+*.html
