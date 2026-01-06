@@ -47,12 +47,14 @@ This project analyzes the global electricity transition with a focus on the grow
 
 ## Setup Instructions
 
-1. Create and activate a virtual environment
 
+1. Create and activate a virtual environment. Try with no specific Python Version and if it doesnt work try with Version 3.14.x as described bellow.
+
+**With no specific Version**
 **Windows:**
 ```bash
 python -m venv .venv
-.\.venv\Scripts\activate.
+.\.venv\Scripts\Activate.ps1
 ```
 
 **macOS/Linux:**
@@ -61,11 +63,32 @@ python -m venv .venv
 python -m venv .venv
 source .venv/bin/activate
 ```
+**With specific Version 3.14 (how I tested it successfully and how it works 100% (on Windows))**
+- Download python version 3.14.x. here: https://www.python.org/downloads/
+- create and activate enviroment with following commands:
 
+**Windows:**
+```bash
+py -3.14 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**macOS/Linux:**
+
+```bash
+python3.14 -m venv .venv
+source .venv/bin/activate
+```
+When the enviroment is activated successfully, go on with:
 2. Install required packages
 
 ```bash
 pip install -r requirements.txt
+```
+
+3. Register the virtual environment as a Jupyter kernel
+```bash
+python -m ipykernel install --user --name=DVIZ_ENV --display-name "Python (DVIZ_ENV)"
 ```
 
 ## Running the code
