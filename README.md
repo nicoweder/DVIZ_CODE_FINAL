@@ -40,7 +40,7 @@ This project analyzes the global electricity transition with a focus on the grow
 | `my_data_story/index_files/`                               | Automatically generated assets required to display the HTML file correctly                     |
 | `images/`                                                  | Exported static images of key visualizations for documentation                                 |
 | `worksummary_Nico_Weder_Global_electricity_co2_story.xlsx` | Work summary documenting project progress and timeline                                         |
-| `Global_Electricity_and_CO2_Data_Story_Video.mp4`           | Short (≤30s) video demonstrating the project and visualizations                                |
+| `Global_Electricity_and_CO2_Data_Story_Video.mp4`           | Short video demonstrating the project and visualizations                                |
 | `requirements.txt`                                         | Python package versions required to reproduce the analysis                                     |
 | `README.md`                                                | Project documentation and setup instructions                                                   |
 | `report_final_Energy_production_Nico_Weder.pdf`              | Final report to this project                                                   |
@@ -50,7 +50,7 @@ This project analyzes the global electricity transition with a focus on the grow
 
 1. Create and activate a virtual environment. Try with no specific Python Version and if it doesnt work try with Version 3.14.x as described bellow.
 
-**With no specific Version**
+**With no specific Python Version**   
 **Windows:**
 ```bash
 python -m venv .venv
@@ -63,7 +63,8 @@ python -m venv .venv
 python -m venv .venv
 source .venv/bin/activate
 ```
-**With specific Version 3.14 (how I tested it successfully and how it works 100% (on Windows))**
+**With specific Python Version 3.14 (how I tested it successfully and how it works 100% (on Windows))**    
+- Ignore this section if the creation and activation of the virtual enviroment worked without specifying the Python Version!
 - Download python version 3.14.x. here: https://www.python.org/downloads/
 - create and activate enviroment with following commands:
 
@@ -79,7 +80,7 @@ py -3.14 -m venv .venv
 python3.14 -m venv .venv
 source .venv/bin/activate
 ```
-When the enviroment is activated successfully, go on with:
+When the enviroment is activated successfully, go on with:  
 2. Install required packages
 
 ```bash
@@ -97,7 +98,7 @@ To reproduce the analysis, open the notebook in your working environment and run
 jupyter notebook notebooks/Energyproduction_analysis.ipynb
 ```
 ## Viewing the HTML Data Story
-Open the index.html file in the my_data_story folder by double-clicking it, or launch it from the terminal as shown below.
+Open the index.html file in the my_data_story folder by double-clicking it in the Explorer, or launch it from the terminal as shown below.
 
 **Windows:**
 ```bash
